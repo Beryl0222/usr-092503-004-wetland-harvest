@@ -19,3 +19,8 @@ export function normalizeQuota(value) {
   }
   return value;
 }
+
+export { SchedulingEngine, Clock, FakeClock, Status, CapacityError } from "./engine.js";
+export { openDatabase, migrate, SCHEMA_VERSION } from "./db.js";
+export { createApp, createEngine } from "./api.js";
+export { startServer } from "./server.js";
